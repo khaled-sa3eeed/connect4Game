@@ -1,0 +1,19 @@
+def human_play(self, current_state):
+
+        player = self.current_player(current_state)
+        print(f"Your turn, you are playing with {player}")
+
+        available_cols = self.available_actions(current_state)
+        while True:
+          try:
+              col = int(input(f"Choose your column {available_cols}: "))
+              if col in available_cols:
+                  break
+              else:
+                  print("Invalid column, try again.")
+          except ValueError:
+              print("Enter a valid integer column.")
+
+        new_state, last_col = self.take_action(current_state, col)
+        self.display_grid(new_state)
+        return new_state,last_col
