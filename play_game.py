@@ -1,3 +1,4 @@
+from globals_and_setup import initial_grid, arr
 def play_game(self):
         global initial_grid
         self.__init__()
@@ -23,4 +24,5 @@ def play_game(self):
                     print("Y wins!")
                 elif result == 0:
                     print("It's a draw!")
+
                 return
