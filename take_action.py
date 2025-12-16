@@ -1,3 +1,4 @@
+from globals_and_setup import arr
 def take_action(self, current_state, col):
       global arr
       new_state = [row[:] for row in current_state]
@@ -8,5 +9,6 @@ def take_action(self, current_state, col):
               new_state[row][col] = player
               arr[col] += 1
               break
+
 
       return new_state, col
