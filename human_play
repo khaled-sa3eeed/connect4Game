@@ -1,3 +1,4 @@
+from globals_and_setup import initial_grid
 def human_play(self, current_state):
 
         player = self.current_player(current_state)
