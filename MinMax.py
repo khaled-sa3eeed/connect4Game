@@ -1,3 +1,4 @@
+from globals_and_setup import arr
 def MinMax(self, current_state, depth=5):
         if depth == 0:
             return 0
