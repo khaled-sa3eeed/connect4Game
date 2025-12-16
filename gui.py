@@ -1,7 +1,12 @@
 import tkinter as tk
 from tkinter import messagebox
 arr = [0,0,0,0,0,0,0]
-initial_grid=[[]]
+initial_grid = [[" ", " ", " "," "," "," "," "],
+                    [" ", " ", " "," "," "," "," "],
+                    [" ", " ", " "," "," "," "," "],
+                    [" ", " ", " "," "," "," "," "],
+                    [" ", " ", " "," "," "," "," "],
+                    [" ", " ", " "," "," "," "," "]] 
 class Connect4GUI:
     def __init__(self, master, game):
         self.master = master
@@ -164,4 +169,5 @@ class Connect4GUI:
                              [" ", " ", " "," "," "," "," "],
                              [" ", " ", " "," "," "," "," "]]
         arr = [0,0,0,0,0,0,0]
+
 
