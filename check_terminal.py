@@ -1,4 +1,4 @@
-
+from globals_and_setup import arr
 def check_terminal(self, current_state, last_col):
       global arr
 
