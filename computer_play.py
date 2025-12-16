@@ -1,3 +1,4 @@
+from globals_and_setup import arr
 def computer_play(self, current_state):
       player = self.current_player(current_state)
       print(f"Computer turn, he is playing with {player}")
